@@ -21,7 +21,6 @@ from sklearn.metrics import mean_squared_error
 from math import sqrt
 import statsmodels as sm
 
-
 # In[2]:
 
 
@@ -30,8 +29,9 @@ server = app.server
 
 # In[3]:
 
+url = 'https://raw.githubusercontent.com/asimanshu/HBV_Data/main/Data.csv'
 
-data_set = pd.read_excel("Data.xlsx")
+data_set = pd.read_csv(url)
 
 
 # In[4]:
